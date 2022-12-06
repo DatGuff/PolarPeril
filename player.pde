@@ -24,7 +24,6 @@ class Player {
   }
   void Move()
   { 
-    y += ySpeed;
     if (isJumping)
       jump ();
     else {
@@ -40,8 +39,9 @@ class Player {
     }
     if ((x >= 65 && xSpeed <= -1)||(x <= 535 && xSpeed >= 1))
     {
-      x += xSpeed;
-    }
+      x += xSpeed;  
+  }
+    y += ySpeed;
   }
   void drawPlayer()
   {

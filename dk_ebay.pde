@@ -63,11 +63,11 @@ void keyPressed()
     player.ySpeed = -1;
     player.myTimer = 0;
   }
-  if (keyCode == 87 && player.onLadder)
+  if (keyCode == 87)
   {
     player.ySpeed = -1;
   }
-if (keyCode == 83 && player.onLadder)
+if (keyCode == 83)
   {
     player.ySpeed = 1;
   }
